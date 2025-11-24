@@ -1,5 +1,11 @@
 {
-  "name": "server",
-  "scripts": {"start": "node src/server.js"},
-  "dependencies": {"express": "^4.18.2"}
+  "name": "myapp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  }
 }
