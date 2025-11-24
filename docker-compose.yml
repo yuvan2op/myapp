@@ -1,0 +1,17 @@
+services:
+  server:
+    build: ./server
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+
